@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - bd_cliente@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="bd_cliente">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sakila"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="world"/>
+    <table id="8" parent="1" name="cliente"/>
+    <column id="9" parent="8" name="id_cliente">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="10" parent="8" name="cpf_cnpj">
+      <data-type>varchar(14)|0</data-type>
+    </column>
+    <column id="11" parent="8" name="rg">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="12" parent="8" name="endereco">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="13" parent="8" name="bairro">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="14" parent="8" name="cidade">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="15" parent="8" name="estado">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="16" parent="8" name="telefone">
+      <data-type>varchar(14)|0</data-type>
+    </column>
+    <column id="17" parent="8" name="email">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="18" parent="8" name="datacadastro">
+      <data-type>date|0</data-type>
+    </column>
+    <key id="19" parent="8" name="PRIMARY">
+      <columns>id_cliente</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
