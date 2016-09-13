@@ -16,34 +16,37 @@
       <data-type>int(10) unsigned|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="10" parent="8" name="cpf_cnpj">
-      <data-type>varchar(14)|0</data-type>
-    </column>
-    <column id="11" parent="8" name="rg">
-      <data-type>varchar(20)|0</data-type>
-    </column>
-    <column id="12" parent="8" name="endereco">
+    <column id="10" parent="8" name="nome">
       <data-type>varchar(100)|0</data-type>
     </column>
-    <column id="13" parent="8" name="bairro">
-      <data-type>varchar(60)|0</data-type>
-    </column>
-    <column id="14" parent="8" name="cidade">
-      <data-type>varchar(60)|0</data-type>
-    </column>
-    <column id="15" parent="8" name="estado">
-      <data-type>varchar(2)|0</data-type>
-    </column>
-    <column id="16" parent="8" name="telefone">
+    <column id="11" parent="8" name="cpf_cnpj">
       <data-type>varchar(14)|0</data-type>
     </column>
-    <column id="17" parent="8" name="email">
+    <column id="12" parent="8" name="cidade">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="13" parent="8" name="rg">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="14" parent="8" name="endereco">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="15" parent="8" name="bairro">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="16" parent="8" name="estado">
+      <data-type>varchar(2)|0</data-type>
+    </column>
+    <column id="17" parent="8" name="telefone">
+      <data-type>varchar(14)|0</data-type>
+    </column>
+    <column id="18" parent="8" name="email">
       <data-type>varchar(50)|0</data-type>
     </column>
-    <column id="18" parent="8" name="datacadastro">
+    <column id="19" parent="8" name="datacadastro">
       <data-type>date|0</data-type>
     </column>
-    <key id="19" parent="8" name="PRIMARY">
+    <key id="20" parent="8" name="PRIMARY">
       <columns>id_cliente</columns>
       <primary>1</primary>
     </key>

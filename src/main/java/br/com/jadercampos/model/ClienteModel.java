@@ -1,12 +1,14 @@
 package br.com.jadercampos.model;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.io.Serializable;
 
 /**
  * Created by jader on 12/09/2016.
  */
-public class ClienteModel {
+@Entity
+@Table(name="cliente")
+public class ClienteModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id_cliente;
@@ -37,10 +39,6 @@ public class ClienteModel {
 
     @Column(name="email")
     String email;
-
-    @Column(name="datacadastro")
-    @Temporal(TemporalType.TIMESTAMP)
-    Date datacadastro;
 
     public int getId_cliente() {
         return id_cliente;
